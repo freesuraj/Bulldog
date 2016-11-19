@@ -1,3 +1,4 @@
+![Bulldog: Json Parser](https://raw.githubusercontent.com/Bulldog/Assets/Bulldog.png)
 
 # Bulldog
 Bulldog is a super-fast json parser that will keep attacking until it gets the value you desire, or you give up. Just like a bulldog.
