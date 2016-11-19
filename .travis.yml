@@ -1,14 +1,8 @@
 language: objective-c
 osx_image: xcode8
-env:
-  - WORKSPACE=Bulldog.xcworkspace
-  - SCHEME=Bulldog
-  - DESTINATION="platform=iOS Simulator,name=iPhone 7"
-
 before_install:
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 script:
   - xcodebuild -version
-  - xcodebuild -showsdks
-  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" build test | xcpretty;
+  - xcodebuild -workspace Bulldog.xcworkspace -scheme Bulldog -destination 'platform=iOS Simulator,name=iPhone 7' build test | xcpretty;
   - pod lib lint;
