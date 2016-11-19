@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/freesuraj/Bulldog/badge.svg?branch=master)](https://coveralls.io/github/freesuraj/Bulldog?branch=master)
 [![Code Climate](https://codeclimate.com/github/freesuraj/Bulldog/badges/gpa.svg)](https://codeclimate.com/github/freesuraj/Bulldog)
 [![Issue Count](https://codeclimate.com/github/freesuraj/Bulldog/badges/issue_count.svg)](https://codeclimate.com/github/freesuraj/Bulldog)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Bulldog.svg)](http://cocoadocs.org/docsets/Bulldog/0.1.0/)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Bulldog.svg)](http://cocoadocs.org/docsets/Bulldog/)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/Bulldog.svg?style=flat)](http://cocoadocs.org/docsets/Bulldog)
 [![Twitter](https://img.shields.io/badge/twitter-@iosCook-blue.svg?style=flat)](http://twitter.com/iosCook)

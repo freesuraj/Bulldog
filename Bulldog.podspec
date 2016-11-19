@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Bulldog'
-  s.version = '0.1.0'
+  s.version = '0.2.0'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'Bulldog is a super-fast json parser that will keep attacking until it gets the value you desire, or you give up. Just like a bulldog.'
   s.social_media_url = 'http://twitter.com/iosCook'
