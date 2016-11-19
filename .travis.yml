@@ -8,10 +8,7 @@ env:
 before_install:
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 script:
-  - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-
-xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" build test | xcpretty;
-
-pod lib lint;
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" build test | xcpretty;
+  - pod lib lint;
