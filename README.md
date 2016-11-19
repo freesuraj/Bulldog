@@ -21,7 +21,7 @@ pod 'Bulldog'
 
 ## Example
 
-Please check the `BulldogTests.swift` file for all possilbe use cases
+Please check the [BulldogTests.swift](https://github.com/freesuraj/Bulldog/blob/master/Tests/BulldogTests.swift) file for all possilbe use cases
 
 ## About
 
