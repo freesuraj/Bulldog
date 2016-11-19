@@ -1,5 +1,12 @@
 ![Bulldog: Json Parser](https://raw.githubusercontent.com/freesuraj/Bulldog/master/Assets/logo.png)
 
+
+[![Build Status](https://travis-ci.org/freesuraj/Bulldog.svg?branch=master)](https://travis-ci.org/freesuraj/Bulldog)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Bulldog.svg)](https://img.shields.io/cocoapods/v/Bulldog.svg)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Platform](https://img.shields.io/cocoapods/p/Bulldog.svg?style=flat)](http://cocoadocs.org/docsets/Bulldog)
+[![Twitter](https://img.shields.io/badge/twitter-@iosCook-blue.svg?style=flat)](http://twitter.com/iosCook)
+
 # Bulldog
 Bulldog is a super-fast json parser that will keep attacking until it gets the value you desire, or you give up. Just like a bulldog.
 
