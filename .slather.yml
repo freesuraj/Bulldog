@@ -1,5 +1,5 @@
 coverage_service: coveralls
-workspace: Bulldog.xcworkspace
+xcodeproj: Bulldog.xcodeproj
 scheme: Bulldog
 ignore:
   - iOS Example/*
