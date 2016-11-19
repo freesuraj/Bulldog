@@ -5,11 +5,11 @@ Bulldog is a super-fast json parser that will keep attacking until it gets the v
 
 ## Why Bulldog?
 
-✅ Super-light
-✅ Easily extendible
-✅ Can easily traverse through path of a json object to get the final value while ignoring the type of intermediate objects
-✅ Utilises the apple's JSONSerialization underneath
-✅ Well tested with 100% test coverage
+- ✅ Super-light
+- ✅ Easily extendible
+- ✅ Can easily traverse through path of a json object to get the final value while ignoring the type of intermediate objects
+- ✅ Utilises the apple's JSONSerialization underneath
+- ✅ Well tested with 100% test coverage
 
 ## Installation
 
