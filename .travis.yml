@@ -2,7 +2,11 @@ language: objective-c
 osx_image: xcode8
 before_install:
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+  - gem install slather --no-ri --no-rdoc
 script:
+  - set -o pipefail
   - xcodebuild -version
-  - xcodebuild -workspace Bulldog.xcworkspace -scheme Bulldog -destination 'platform=iOS Simulator,name=iPhone 7' build test | xcpretty;
+  - xcodebuild -workspace Bulldog.xcworkspace -scheme Bulldog -destination 'platform=iOS Simulator,name=iPhone 7' GCC_GENERATE_TEST_COVERAGE_FILES=YES build test | xcpretty;
   - pod lib lint;
+
+after_success: slather

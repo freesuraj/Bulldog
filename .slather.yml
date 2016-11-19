@@ -1,0 +1,5 @@
+coverage_service: coveralls
+workspace: Bulldog.xcworkspace
+scheme: Bulldog
+ignore:
+  - iOS Example/*
