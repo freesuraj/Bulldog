@@ -9,4 +9,6 @@ script:
   - xcodebuild -workspace Bulldog.xcworkspace -scheme Bulldog -destination 'platform=iOS Simulator,name=iPhone 7' test | xcpretty;
   - pod lib lint;
 
-after_success: slather
+after_success: 
+  - slather
+  - bash <(curl -s https://codecov.io/bash)
