@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/freesuraj/Bulldog/badge.svg?branch=master)](https://coveralls.io/github/freesuraj/Bulldog?branch=master)
 [![codecov](https://codecov.io/gh/freesuraj/Bulldog/branch/master/graph/badge.svg)](https://codecov.io/gh/freesuraj/Bulldog)
 [![Code Climate](https://codeclimate.com/github/freesuraj/Bulldog/badges/gpa.svg)](https://codeclimate.com/github/freesuraj/Bulldog)
+[![codebeat badge](https://codebeat.co/badges/b009ba3f-092c-49df-861c-d9f2e758e9e6)](https://codebeat.co/projects/github-com-freesuraj-bulldog)
 [![Issue Count](https://codeclimate.com/github/freesuraj/Bulldog/badges/issue_count.svg)](https://codeclimate.com/github/freesuraj/Bulldog)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Bulldog.svg)](http://cocoadocs.org/docsets/Bulldog/)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
