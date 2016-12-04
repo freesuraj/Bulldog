@@ -17,8 +17,6 @@ class BulldogTests: XCTestCase {
         super.setUp()
         if let url = Bundle(for: BulldogTests.self).url(forResource: "Test", withExtension: "json"), let data = try? Data(contentsOf: url), let json = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) {
             bulldog = Bulldog(json: json)
-        } else {
-            bulldog = Bulldog(json: "")
         }
     }
     
