@@ -6,7 +6,7 @@ before_install:
 script:
   - set -o pipefail
   - xcodebuild -version
-  - xcodebuild -workspace Bulldog.xcworkspace -scheme Bulldog -destination 'platform=iOS Simulator,name=iPhone 7' test | xcpretty;
+  - xcodebuild -workspace Bulldog.xcworkspace -scheme Bulldog -destination 'platform=iOS Simulator,name=iPhone 6s' test | xcpretty;
   - pod lib lint;
 
 after_success: 
