@@ -20,6 +20,68 @@ Bulldog is a super-fast json parser that will keep attacking until it gets the v
 - ✅ Utilises the apple's JSONSerialization underneath
 - ✅ Well tested with 100% test coverage
 
+## Example Usage
+
+Let's suppose we want to parse the following JSON object
+
+### response.json
+
+```
+{
+   "id":123,
+   "first_name":"Conor",
+   "last_name":"McGregor",
+   "age":28,
+   "height": 171,
+   "weight":70.5,
+   "fights":[
+      {
+         "id":"UFC 205",
+         "opponent":"Eddie Alvarez",
+         "venue":"New York",
+         "win":true
+      },
+      {
+         "id":"UFC 202",
+         "opponent":"Nate Diaz",
+         "venue":"Las Vegas",
+         "win":true
+      },
+      {
+         "id":"UFC 196",
+         "opponent":"Nate Diaz",
+         "venue":"Las Vegas",
+         "win":false
+      }
+   ]
+}
+```
+
+### parser.swift
+
+Now to parse the above json file,
+
+```swift
+let json: Any = ... // Json from network
+let bulldog = Bulldog(json: json)
+let name = bulldog.string("first_name") + " " + bulldog.string("last_name") // Conor McGregor
+
+let height = bulldog.int("height") // 171
+let weight = bulldog.double("weight") // 70.5
+
+// Get first opponent of his fights
+let firstOpponent = bulldog.string("fights", 0, "opponent") // Eddie Alvarez
+// Get fights array
+let fights = bulldog.array("fights") // Returns array of fights
+
+// Return the first fight dictionary
+let firstFight = bulldog.dictionary("fights", 0) // Returns first fight dictionary
+
+// Check if first fight was a win
+let isWin = Bulldog(json: fights[0]).boolean("win") // Returns true
+
+```
+
 ## Installation
 
 ### Carthage
