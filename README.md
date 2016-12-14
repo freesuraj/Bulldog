@@ -108,6 +108,9 @@ Please check the [BulldogTests.swift](https://github.com/freesuraj/Bulldog/blob/
 
 ## About
 
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/freesuraj" data-style="mega" data-count-href="/freesuraj/followers" data-count-api="/users/freesuraj#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @freesuraj on GitHub">Follow @freesuraj</a>
+
 If you found this little tool useful, I'd love to hear about it. You can also follow me on Twitter at [@iosCook](https://twitter.com/ioscook)
 
 
