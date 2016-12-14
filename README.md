@@ -1,4 +1,6 @@
 ![Bulldog: Json Parser](https://raw.githubusercontent.com/freesuraj/Bulldog/master/Assets/logo.png)
+
+
 [![Build Status](https://travis-ci.org/freesuraj/Bulldog.svg?branch=master)](https://travis-ci.org/freesuraj/Bulldog)
 [![Coverage Status](https://coveralls.io/repos/github/freesuraj/Bulldog/badge.svg?branch=master)](https://coveralls.io/github/freesuraj/Bulldog?branch=master)
 [![codecov](https://codecov.io/gh/freesuraj/Bulldog/branch/master/graph/badge.svg)](https://codecov.io/gh/freesuraj/Bulldog)
