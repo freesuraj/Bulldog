@@ -1,10 +1,4 @@
-
-[![GitHub forks](https://img.shields.io/github/forks/bevacqua/bulldog.svg?style=social&label=Fork)](https://github.com/bevacqua/awesome-badges)
-
-[![GitHub stars](https://img.shields.io/github/stars/bevacqua/bulldog.svg?style=social&label=Star)](https://github.com/bevacqua/awesome-badges)
-
 ![Bulldog: Json Parser](https://raw.githubusercontent.com/freesuraj/Bulldog/master/Assets/logo.png)
-
 [![Build Status](https://travis-ci.org/freesuraj/Bulldog.svg?branch=master)](https://travis-ci.org/freesuraj/Bulldog)
 [![Coverage Status](https://coveralls.io/repos/github/freesuraj/Bulldog/badge.svg?branch=master)](https://coveralls.io/github/freesuraj/Bulldog?branch=master)
 [![codecov](https://codecov.io/gh/freesuraj/Bulldog/branch/master/graph/badge.svg)](https://codecov.io/gh/freesuraj/Bulldog)
@@ -15,6 +9,8 @@
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/Bulldog.svg?style=flat)](http://cocoadocs.org/docsets/Bulldog)
 [![Twitter](https://img.shields.io/badge/twitter-@iosCook-blue.svg?style=flat)](http://twitter.com/iosCook)
+[![GitHub forks](https://img.shields.io/github/forks/freesuraj/bulldog.svg?style=social&label=Fork)](https://github.com/freesuraj/bulldog)
+[![GitHub stars](https://img.shields.io/github/stars/freesuraj/bulldog.svg?style=social&label=Star)](https://github.com/freesuraj/bulldog)
 
 # Bulldog
 Bulldog is a super-fast json parser that will keep attacking until it gets the value you desire, or you give up. Just like a bulldog.
@@ -113,7 +109,7 @@ Please check the [BulldogTests.swift](https://github.com/freesuraj/Bulldog/blob/
 
 ## About
 
-[![GitHub followers](https://img.shields.io/github/followers/freesuraj.svg?style=social&label=Follow)](https://github.com/bevacqua/awesome-badges)
+[![GitHub followers](https://img.shields.io/github/followers/freesuraj.svg?style=social&label=Follow)](https://github.com/freesuraj)
 
 If you found this little tool useful, I'd love to hear about it. You can also follow me on Twitter at [@iosCook](https://twitter.com/ioscook)
 
