@@ -38,13 +38,11 @@ public struct Bulldog {
 	
 	// Returns int value, even if the original value is in string type
 	public func intPromised(_ keyPath: PathType...) -> Int? {
-		if let value = raw(keyPath) as? Int {
-			return value
-		} else if let value = raw(keyPath) as? String, let intValue = Int(value) {
-			return intValue
-		} else {
-			return nil
+		var finalValue = raw(keyPath) as? Int
+		if let value = raw(keyPath) as? String, let intValue = Int(value) {
+			finalValue = intValue
 		}
+		return finalValue
 	}
     
     public func double(_ keyPath: PathType...) -> Double? {
@@ -53,13 +51,11 @@ public struct Bulldog {
 	
 	// Returns double value, even if the original value is in string type
 	public func doublePromised(_ keyPath: PathType...) -> Double? {
-		if let value = raw(keyPath) as? Double {
-			return value
-		} else if let value = raw(keyPath) as? String, let doubleValue = Double(value) {
-			return doubleValue
-		} else {
-			return nil
+		var finalValue = raw(keyPath) as? Double
+		if let value = raw(keyPath) as? String, let doubleValue = Double(value) {
+			finalValue = doubleValue
 		}
+		return finalValue
 	}
     
     public func bool(_ keyPath: PathType...) -> Bool {
