@@ -53,6 +53,44 @@ class BulldogTests: XCTestCase {
         let value = bulldog.double("search_metadata", "completed_in")
         XCTAssertEqual(value!, 0.035)
     }
+	
+	func testIntegerPromisedString() {
+		let value = bulldog.intPromised("raw_value", "string_integer")
+		XCTAssertEqual(value!, 322)
+	}
+	
+	func testIntegerPromisedInteger() {
+		let value2 = bulldog.intPromised("search_metadata", "count")
+		XCTAssertEqual(value2!, 4)
+	}
+	
+	func testIntegerPromisedNil() {
+		let value1 = bulldog.intPromised("search_metadata", "type")
+		XCTAssertNil(value1)
+	}
+	
+	func testDoublePromisedString() {
+		let value = bulldog.doublePromised("raw_value", "string_double")
+		XCTAssertEqual(value!, 3.22)
+	}
+	
+	func testDoublePromisedDouble() {
+		let value1 = bulldog.doublePromised("search_metadata", "type")
+		XCTAssertNil(value1)
+	}
+	
+	func testDoublePromisedNil() {
+		let value2 = bulldog.doublePromised("search_metadata", "completed_in")
+		XCTAssertEqual(value2!, 0.035)
+	}
+	
+	func testBulldogReturn() {
+		let value = bulldog.bulldog("raw_value")?.string("type")
+		XCTAssertEqual(value, "raw")
+		
+		let valueNil = bulldog.bulldog("raw_value", "nth")
+		XCTAssertNil(valueNil)
+	}
     
     func testBool() {
         let value = bulldog.bool("search_metadata", "is_test")

@@ -415,6 +415,8 @@
     },
     "raw_value": {
         "type" : "raw",
-        "timer" : 0.2
+        "timer" : 0.2,
+		"string_integer": "322",
+		"string_double": "3.22"
     }
 }

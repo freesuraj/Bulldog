@@ -35,15 +35,33 @@ public struct Bulldog {
     public func int(_ keyPath: PathType...) -> Int? {
         return raw(keyPath) as? Int
     }
+	
+	// Returns int value, even if the original value is in string type
+	public func intPromised(_ keyPath: PathType...) -> Int? {
+		var finalValue = raw(keyPath) as? Int
+		if let value = raw(keyPath) as? String, let intValue = Int(value) {
+			finalValue = intValue
+		}
+		return finalValue
+	}
     
     public func double(_ keyPath: PathType...) -> Double? {
         return raw(keyPath) as? Double
     }
+	
+	// Returns double value, even if the original value is in string type
+	public func doublePromised(_ keyPath: PathType...) -> Double? {
+		var finalValue = raw(keyPath) as? Double
+		if let value = raw(keyPath) as? String, let doubleValue = Double(value) {
+			finalValue = doubleValue
+		}
+		return finalValue
+	}
     
     public func bool(_ keyPath: PathType...) -> Bool {
         return raw(keyPath) as? Bool ?? false
     }
-    
+
     public func dictionary(_ keyPath: PathType...) -> [String: Any]? {
         return raw(keyPath) as? [String: Any]
     }
@@ -55,6 +73,11 @@ public struct Bulldog {
     public func rawJson(_ keyPath: PathType...) -> Any? {
         return raw(keyPath)
     }
+	
+	public func bulldog(_ keyPath: String...) -> Bulldog? {
+		guard let json = raw(keyPath) else { return nil }
+		return Bulldog(json: json)
+	}
     
     // MARK: Private methods
     private func raw(_ keyPath: [PathType]) -> Any? {
