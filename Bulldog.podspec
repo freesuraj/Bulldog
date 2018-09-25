@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.authors = { 'Suraj Pathak' => 'freesuraj@gmail.com' }
   s.source = { :git => 'https://github.com/freesuraj/Bulldog.git', :tag => s.version }
   s.ios.deployment_target = '9.0'
+  s.swift_version = '4.2'
   s.source_files = 'Source/*swift'
 end
