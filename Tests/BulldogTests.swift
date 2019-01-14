@@ -111,6 +111,11 @@ class BulldogTests: XCTestCase {
         let value = bulldog.bool("search_metadata", "is_debug")
         XCTAssertFalse(value)
     }
+	
+	func testInvalidBoolIfNotTrue() {
+		let value = bulldog.bool("search_metadata", "is_debug", ifNot: true)
+		XCTAssertTrue(value)
+	}
     
     func testArray() {
         let value = bulldog.array("statuses")
