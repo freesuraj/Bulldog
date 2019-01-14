@@ -84,6 +84,16 @@ class BulldogTests: XCTestCase {
 		XCTAssertEqual(value2!, 0.035)
 	}
 	
+	func testDate() {
+		let dateString = "Mon Sep 24 03:35:21 +0000 2012"
+		let format = "EEE MMM dd HH:mm:ss Z yyyy"
+		let df = DateFormatter()
+		df.dateFormat = format
+		let expectedDate = df.date(from: dateString)
+		let createdDate = bulldog.date(with: format, keyPath: "statuses", 0, "created_at")
+		XCTAssertEqual(expectedDate, createdDate)
+	}
+	
 	func testBulldogReturn() {
 		let value = bulldog.bulldog("raw_value")?.string("type")
 		XCTAssertEqual(value, "raw")

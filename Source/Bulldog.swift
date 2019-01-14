@@ -1,7 +1,7 @@
 //
 //  Bulldog.swift
 //  Bulldog
-//
+//git
 //  Created by Suraj Pathak on 19/11/16.
 //  Copyright © 2016 Suraj Pathak. All rights reserved.
 //
@@ -61,6 +61,15 @@ public struct Bulldog {
     public func bool(_ keyPath: PathType...) -> Bool {
         return raw(keyPath) as? Bool ?? false
     }
+	
+	public func date(with format: String, keyPath: PathType ...) -> Date? {
+		if let dateString = raw(keyPath) as? String {
+			let df = DateFormatter()
+			df.dateFormat = format
+			return df.date(from: dateString)
+		}
+		return nil
+	}
 
     public func dictionary(_ keyPath: PathType...) -> [String: Any]? {
         return raw(keyPath) as? [String: Any]
