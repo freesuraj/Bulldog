@@ -49,7 +49,7 @@ public struct Bulldog {
         return raw(keyPath) as? Double
     }
 	
-	// Returns double value, even if the original value is in string type
+	/// Returns double value, even if the original value is in string type
 	public func doublePromised(_ keyPath: PathType...) -> Double? {
 		var finalValue = raw(keyPath) as? Double
 		if let value = raw(keyPath) as? String, let doubleValue = Double(value) {
@@ -57,9 +57,10 @@ public struct Bulldog {
 		}
 		return finalValue
 	}
-    
-    public func bool(_ keyPath: PathType...) -> Bool {
-        return raw(keyPath) as? Bool ?? false
+	
+	/// Returns bool value from the keypath, if not return default ifNot
+	public func bool(_ keyPath: PathType..., ifNot: Bool = false) -> Bool {
+        return raw(keyPath) as? Bool ?? ifNot
     }
 	
 	public func date(with format: String, keyPath: PathType ...) -> Date? {
